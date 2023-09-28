@@ -1,15 +1,20 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Estudiante {
-    private int cuenta;
+    private String numeroCuenta;
     private String nombre;
     private String materia;
     private double calificacion;
+    private Date fechaIngreso;
 
-    // Constructor para crear un estudiante con cuenta y nombre
-    public Estudiante(int cuenta, String nombre) {
-        this.cuenta = cuenta;
+    // Constructor para crear un estudiante con número de cuenta, nombre y fecha de ingreso
+    public Estudiante(String numeroCuenta, String nombre, Date fechaIngreso) {
+        this.numeroCuenta = numeroCuenta;
         this.nombre = nombre;
-        this.materia = ""; // Inicialmente no tiene materia asignada
-        this.calificacion = 0.0; // Inicialmente la calificación es 0.0
+        this.fechaIngreso = fechaIngreso;
+        this.materia = "";
+        this.calificacion = 0.0;
     }
 
     // Método para matricular al estudiante en una materia
@@ -33,8 +38,12 @@ public class Estudiante {
 
     // Método para obtener la información del estudiante
     public void mostrarInformacion() {
-        System.out.println("Cuenta: " + cuenta);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        String fechaIngresoStr = dateFormat.format(fechaIngreso);
+
+        System.out.println("Número de Cuenta: " + numeroCuenta);
         System.out.println("Nombre: " + nombre);
+        System.out.println("Fecha de Ingreso: " + fechaIngresoStr);
         System.out.println("Materia: " + materia);
         System.out.println("Calificación: " + calificacion);
         System.out.println("Observación: " + getObservacion());
