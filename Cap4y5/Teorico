@@ -1,0 +1,36 @@
+//5.5 Describa los cuatro elementos básicos de la repetición controlada por contador:
+
+Los cuatro elementos básicos de la repetición controlada por contador (también conocida como bucle controlado por contador) son:
+
+Inicialización del contador: En este paso, se inicializa la variable que actuará como contador. Esta variable se utiliza para llevar un registro del número de veces que se ejecutará el bucle.
+
+Condición de repetición: Se establece una condición que se evalúa antes de cada iteración del bucle. Si la condición es verdadera, el bucle continúa ejecutándose; si es falsa, el bucle termina y la ejecución continúa con las instrucciones después del bucle.
+
+Actualización del contador: En cada iteración, se actualiza el valor del contador de acuerdo con una regla específica. Esto generalmente implica incrementar o decrementar el valor del contador para acercarse a la condición de finalización del bucle.
+
+Cuerpo del bucle: El cuerpo del bucle contiene las instrucciones que se ejecutan repetidamente mientras la condición de repetición sea verdadera. Estas instrucciones pueden ser simples o complejas y determinan la acción que se realizará en cada iteración.
+
+//5.6 Compare y contraste las instrucciones de repetición while y for:
+Las instrucciones de repetición while y for son ambas utilizadas para crear bucles en Java (y en otros lenguajes de programación) que permiten ejecutar un bloque de código repetidamente mientras se cumple una condición. Aunque ambas instrucciones logran el mismo objetivo, tienen diferencias en su sintaxis y uso.
+
+//5.7 Hable sobre una situación en la que sería más apropiado usar una instrucción do...while que una instrucción 
+//while. Explique por qué.
+Un escenario común en el que se puede aplicar esto es la validación de entrada de usuario en una aplicación. Supongamos que estás desarrollando un programa que solicita al usuario que ingrese una contraseña válida. La lógica podría ser la siguiente:
+
+Solicitar al usuario que ingrese una contraseña.
+Verificar si la contraseña es válida.
+Si la contraseña no es válida, mostrar un mensaje de error y volver a solicitar la contraseña.
+Repetir el proceso hasta que el usuario proporcione una contraseña válida.
+
+//5.8 Compare y contraste las instrucciones break y continue.
+Las instrucciones break y continue son utilizadas en lenguajes de programación como Java para controlar el flujo de ejecución en bucles (por ejemplo, for, while, do...while) y estructuras condicionales (como switch). Aunque ambas pueden parecer similares porque afectan el flujo de ejecución, tienen propósitos diferentes y se utilizan en situaciones distintas. 
+
+//4.10 Compare y contraste la instrucción if de selección simple y la instrucción de repetición while. ¿Cuál es la
+//similitud en las dos instrucciones? ¿Cuál es su diferencia?
+La instrucción if de selección simple y la instrucción de repetición while son dos constructos de programación utilizados en Java y otros lenguajes para controlar el flujo de ejecución en un programa. Aunque tienen propósitos diferentes, comparten una similitud fundamental
+
+//4.11 Explique lo que ocurre cuando un programa en Java trata de dividir un entero entre otro. ¿Qué ocurre con la
+//parte fraccionaria del cálculo? ¿Cómo puede un programador evitar ese resultado?
+Cuando un programa en Java divide un entero entre otro entero utilizando el operador de división /, se produce una operación de división entera. Aquí está lo que ocurre:
+
+División entera: Java realiza la división y devuelve el cociente como un número entero, truncando cualquier parte fraccionaria. Esto significa que el resultado de la división será un número entero o un valor de tipo int o long, dependiendo de los tipos de datos de los operandos. La parte fraccionaria se descarta.
