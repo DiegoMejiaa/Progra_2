@@ -3,27 +3,21 @@ import java.util.Scanner;
 public class EncontrarMenor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Ingrese la cantidad de números a comparar: ");
-        int cantidadNumeros = scanner.nextInt();
-
-        if (cantidadNumeros <= 0) {
-            System.out.println("La cantidad de números debe ser mayor que cero.");
-            return;
-        }
-
-        System.out.print("Ingrese el primer número: ");
-        int menor = scanner.nextInt();
-
-        for (int i = 1; i < cantidadNumeros; i++) {
-            System.out.print("Ingrese el siguiente número: ");
+        int contador = 0;
+        int menor = Integer.MAX_VALUE; // Inicializar mayor con el valor mínimo de un entero
+        
+while (contador < 10) {
+            System.out.print("Ingrese un número entero: ");
             int numero = scanner.nextInt();
-
+            
             if (numero < menor) {
                 menor = numero;
             }
+            
+            contador++;
         }
-
-        System.out.println("El menor de los números ingresados es: " + menor);
+        
+        System.out.println("El número más pequeño: " + menor);
+        scanner.close();
     }
 }
